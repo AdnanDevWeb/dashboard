@@ -7,8 +7,8 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="./dist/output.css">
 </head>
-<body class="grid grid-cols-5">
-    <section class="bg-gray-700 text-white flex flex-col gap-12 p-6">
+<body class="grid grid-cols-5 w-[100vw] h-[100vh]">
+    <section class="bg-gray-700 text-white flex flex-col gap-12 p-6 row-span-full">
         <section class="flex gap-5">
             <img src="./imgs/dashboard-svgrepo-com.svg" alt="" class="w-8">
             <p class="font-bold text-2xl">Dashboard</p>
@@ -31,9 +31,9 @@
     </section>
     <section class="col-span-4">
         <section class="shadow-2xl p-10 bg-white 0 flex flex-col gap-10">
-            <div class="grid grid-cols-2">
+            <div class="grid grid-cols-2 ">
                 <div class="relative">
-                    <input type="text" placeholder="Search" class=" bg-slate-400 w-full  rounded-2xl p-1 text-white grow">
+                    <input type="text" placeholder="Search" class=" bg-slate-400 w-full  rounded-2xl  text-white grow  focus:outline-none text-right p-1 pr-4">
                 </div>
                 <div class="flex justify-end gap-6">
                     <img class="w-6 cursor-pointer" src="./imgs/ring-ringing-alert-bell-svgrepo-com.svg" alt="">
@@ -57,97 +57,83 @@
                 </div>
             </div>
         </section>
-        <section class="bg-cyan-300">
-            <div>
-                <div class="project">
+        <section class="bg-cyan-300 p-8 pt-14 grid grid-cols-[400px_400px_250px] grid-rows-[250px_250px] gap-5 ">
+            <div class="grid row-span-2  col-span-2  grid-cols-2 gap-5 relative before:content-['Your_Projects'] before:absolute before:font-bold before:z-10 before:text-xl before:top-[-40px]">
+                <div class=" after:content-[''] after:w-3 after:absolute after:h-full after:bg-amber-500 after:left-0 after:top-0 after:rounded-l-xl p-8 bg-white flex flex-col gap-10 rounded-xl relative">
                     <div>
-                        <p>Super Cool project</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, cum obcaecati totam illum voluptates ducimus earum molestiae ipsum accusantium inventore.</p>
+                        <p class="font-bold">Super Cool project</p>
+                        <p class="text-zinc-600"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, cum obcaecati totam illum voluptates ducimus earum molestiae ipsum accusantium inventore.</p>
                     </div>
-                    <div>
-                        <img class="w-8" src="./imgs/star-check-svgrepo-com.svg" alt=""><img class="w-8" src="./imgs/eye-svgrepo-com.svg" alt=""><img class="w-8" src="./imgs/fork-svgrepo-com.svg" alt="">
-                    </div>
-                </div>
-                <div class="project">
-                    <div>
-                        <p>Super Cool project</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, cum obcaecati totam illum voluptates ducimus earum molestiae ipsum accusantium inventore.</p>
-                    </div>
-                    <div>
-                        <img class="w-8" src="./imgs/star-check-svgrepo-com.svg" alt=""><img class="w-8" src="./imgs/eye-svgrepo-com.svg" alt=""><img class="w-8" src="./imgs/fork-svgrepo-com.svg" alt="">
+                    <div class="flex gap-3 justify-end">
+                        <img class="w-5" src="./imgs/star-check-svgrepo-com.svg" alt=""><img class="w-5" src="./imgs/eye-svgrepo-com.svg" alt=""><img class="w-5" src="./imgs/fork-svgrepo-com.svg" alt="">
                     </div>
                 </div>
-                <div class="project">
+
+                <div class=" after:content-[''] after:w-3 after:absolute after:h-full after:bg-amber-500 after:left-0 after:top-0 after:rounded-l-xl p-8 bg-white flex flex-col gap-10 rounded-xl relative">
                     <div>
-                        <p>Super Cool project</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, cum obcaecati totam illum voluptates ducimus earum molestiae ipsum accusantium inventore.</p>
+                        <p class="font-bold">Super Cool project</p>
+                        <p class="text-zinc-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, cum obcaecati totam illum voluptates ducimus earum molestiae ipsum accusantium inventore.</p>
                     </div>
-                    <div>
-                        <img class="w-8" src="./imgs/star-check-svgrepo-com.svg" alt=""><img class="w-8" src="./imgs/eye-svgrepo-com.svg" alt=""><img class="w-8" src="./imgs/fork-svgrepo-com.svg" alt="">
-                    </div>
-                </div>
-                <div class="project">
-                    <div>
-                        <p>Super Cool project</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, cum obcaecati totam illum voluptates ducimus earum molestiae ipsum accusantium inventore.</p>
-                    </div>
-                    <div>
-                        <img class="w-8" src="./imgs/star-check-svgrepo-com.svg" alt=""><img class="w-8" src="./imgs/eye-svgrepo-com.svg" alt=""><img class="w-8" src="./imgs/fork-svgrepo-com.svg" alt="">
+                    <div class="flex gap-3 justify-end">
+                        <img class="w-5" src="./imgs/star-check-svgrepo-com.svg" alt=""><img class="w-5" src="./imgs/eye-svgrepo-com.svg" alt=""><img class="w-5" src="./imgs/fork-svgrepo-com.svg" alt="">
                     </div>
                 </div>
-                <div class="project">
+
+
+                <div class=" after:content-[''] after:w-3 after:absolute after:h-full after:bg-amber-500 after:left-0 after:top-0 after:rounded-l-xl p-8 bg-white flex flex-col gap-10 rounded-xl relative">
                     <div>
-                        <p>Super Cool project</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, cum obcaecati totam illum voluptates ducimus earum molestiae ipsum accusantium inventore.</p>
+                        <p class="font-bold">Super Cool project</p>
+                        <p class="text-zinc-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, cum obcaecati totam illum voluptates ducimus earum molestiae ipsum accusantium inventore.</p>
                     </div>
-                    <div>
-                        <img class="w-8" src="./imgs/star-check-svgrepo-com.svg" alt=""><img class="w-8" src="./imgs/eye-svgrepo-com.svg" alt=""><img class="w-8" src="./imgs/fork-svgrepo-com.svg" alt="">
+                    <div class="flex gap-3 justify-end">
+                        <img class="w-5" src="./imgs/star-check-svgrepo-com.svg" alt=""><img class="w-5" src="./imgs/eye-svgrepo-com.svg" alt=""><img class="w-5" src="./imgs/fork-svgrepo-com.svg" alt="">
                     </div>
                 </div>
-    
+
+
+                <div class=" after:content-[''] after:w-3 after:absolute after:h-full after:bg-amber-500 after:left-0 after:top-0 after:rounded-l-xl p-8 bg-white flex flex-col gap-10 rounded-xl relative">
+                    <div>
+                        <p class="font-bold">Super Cool project</p>
+                        <p class="text-zinc-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, cum obcaecati totam illum voluptates ducimus earum molestiae ipsum accusantium inventore.</p>
+                    </div>
+                    <div class="flex gap-3 justify-end">
+                        <img class="w-5" src="./imgs/star-check-svgrepo-com.svg" alt=""><img class="w-5" src="./imgs/eye-svgrepo-com.svg" alt=""><img class="w-5" src="./imgs/fork-svgrepo-com.svg" alt="">
+                    </div>
+                </div>
             </div>
-            <div>
-                <div>
-                    <p>Site Maintenance</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, minima. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa facere facilis molestiae ea fuga!</p>
+            <div class="flex flex-col bg-white rounded-xl p-6">
+                <div class="relative before:content[''] before:bottom-0 before:w-3/4 before:absolute before:h-[2px] before:bg-zinc-800">
+                    <p class="font-bold text-base">Site Maintenance</p>
+                    <p class="text-zinc-600 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, minima. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa facere facilis molestiae ea fuga!</p>
                 </div>
-                <div>
-                    <p>Site Maintenance</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, minima. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa facere facilis molestiae ea fuga!</p>
-                </div>
-                <div>
-                    <p>Site Maintenance</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, minima. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa facere facilis molestiae ea fuga!</p>
-                </div>
-    
             </div>
-            <div>
-                <div>
+            <div class="bg-white rounded-xl flex flex-col p-6 gap-3">
+                <div class="flex gap-4">
                     <img class="w-8" src="./imgs/person-boy-svgrepo-com.svg" alt="">
                     <div>
-                        <p>@tegan</p>
-                        <p>World Peace Builder</p>
+                        <p class="text-[16px] font-bold">@tegan</p>
+                        <p class="text-xs">World Peace Builder</p>
                     </div>
                 </div>
-                <div>
+                <div class="flex gap-4">
                     <img class="w-8" src="./imgs/person-boy-svgrepo-com.svg" alt="">
                     <div>
-                        <p>@tegan</p>
-                        <p>World Peace Builder</p>
+                        <p class="text-[16px] font-bold">@tegan</p>
+                        <p class="text-xs">World Peace Builder</p>
                     </div>
                 </div>
-                <div>
+                <div class="flex gap-4">
                     <img class="w-8" src="./imgs/person-boy-svgrepo-com.svg" alt="">
                     <div>
-                        <p>@tegan</p>
-                        <p>World Peace Builder</p>
+                        <p class="text-[16px] font-bold">@tegan</p>
+                        <p class="text-xs">World Peace Builder</p>
                     </div>
                 </div>
-                <div>
+                <div class="flex gap-4">
                     <img class="w-8" src="./imgs/person-boy-svgrepo-com.svg" alt="">
                     <div>
-                        <p>@tegan</p>
-                        <p>World Peace Builder</p>
+                        <p class="text-[16px] font-bold">@tegan</p>
+                        <p class="text-xs">World Peace Builder</p>
                     </div>
                 </div>
             </div>
